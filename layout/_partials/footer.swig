@@ -44,8 +44,7 @@
 
 {%- if theme.footer.powered.enable %}
   <div class="powered-by">
-    {{- __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'})) }}
-    {%- if theme.footer.powered.version %} v{{ hexo_version }}{%- endif %}
+    跋山涉水，走心为匠。 By Hexo.
   </div>
 {%- endif %}
 
