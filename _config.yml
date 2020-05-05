@@ -9,7 +9,7 @@
 # Useful if you want to comment some options from NexT `_config.yml` by `next.yml` without editing default config.
 override: false
 
-language: zh-CN
+language: default
 
 # Console reminder if new version released.
 reminder: false
@@ -50,7 +50,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Show multilingual switcher in footer.
-language_switcher: false
+language_switcher: true
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
@@ -61,15 +61,15 @@ footer:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
     name: fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
+  copyright: one.gongjiang@gmail.com 版权所有，转载请注明来源。
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -100,13 +100,12 @@ creative_commons:
 
 # Schemes
 # scheme: Muse
-scheme: Mist
-# scheme: Pisces
-#scheme: Gemini
+# scheme: Mist
+scheme: Pisces
+# scheme: Gemini
 
 # Dark Mode
-darkmode: false
-
+darkmode: true
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -165,11 +164,11 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: https://s1.ax1x.com/2020/05/05/Yi9cuQ.gif #/images/avatar.gif
   # If true, the avatar will be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
@@ -212,9 +211,9 @@ toc:
   # Automatically add list number to toc.
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: false
+  expand_all: true
   # Maximum heading depth of generated toc.
   max_depth: 6
 
@@ -242,11 +241,11 @@ read_more_btn: true
 
 # Post meta display settings
 post_meta:
-  item_text: true
+  item_text: falses
   created_at: true
   updated_at:
     enable: false
-    another_day: true
+    another_day: false
   categories: true
 
 # Post wordcount display settings
@@ -363,7 +362,7 @@ codeblock:
     # Show text copy result.
     show_result: true
     # Available values: default | flat | mac
-    style: mac
+    style: default
 
 back2top:
   enable: true
@@ -617,13 +616,13 @@ valine:
   appkey: zHkhf61tDwyPJtTRCnzOLiWn # Your leancloud application appkey
   notify: true # Mail notifier. See: https://github.com/xCss/Valine/wiki
   verify: true # Verification code
-  placeholder: 跋山涉水，走心为匠。(网络限制，外网可加载评论) # Comment box placeholder
+  placeholder: 跋山涉水，走心为匠。 # Comment box placeholder
   avatar: mm # Gravatar style
-  guest_info: nick,mail,link # Custom comment header
+  guest_info: nick,mail # Custom comment header
   pageSize: 10 # Pagination size
-  language: zh-cn # Language, available values: en, zh-cn
+  language: en # Language, available values: en, zh-cn
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
+  comment_count: false # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   #post_meta_order: 0
